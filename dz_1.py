@@ -5,4 +5,9 @@
 # out
 # 9.000000
 
-x = float(input("Введите любое число   "))
+from decimal import Decimal, getcontext 
+number = input("Введите любое число   ")
+y = input("Введите точность в формате 1.000, где количество 0 соотвествует количеству знаков после ,  ")
+# number = Decimal("num")
+getcontext().prec = 80
+print(number.quantize('2'))
