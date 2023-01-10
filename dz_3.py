@@ -5,3 +5,9 @@
 # in -1 out Negative value of the number of numbers! []
 # in 10 out [4, 4, 5, 5, 6, 2, 3, 0, 9, 4]   [6, 2, 3, 0, 9]
 
+import random 
+number = int(input("Ведите длинну последовательности:  "))
+list_source = [random.randrange(1, 15, 1) for i in range(number)]
+print (list_source)
+
+list_source(i)==

@@ -5,9 +5,8 @@
 # out
 # 9.000000
 
-from decimal import Decimal, getcontext 
-number = input("Введите любое число   ")
-y = input("Введите точность в формате 1.000, где количество 0 соотвествует количеству знаков после ,  ")
-# number = Decimal("num")
-getcontext().prec = 80
-print(number.quantize('2'))
+from decimal import Decimal
+number = Decimal(input("Введите любое число: "  ))
+number_format = input("Введите требуемую точность:  ")
+number = number.quantize(Decimal(number_format))
+print(number)
