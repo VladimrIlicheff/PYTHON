@@ -46,13 +46,17 @@
 #       print(i, end="")
 # print()
 
-my_list = ['Python', 'C++', 'C#', 'Java', "Java", 'C++']
 
-
-my_set = set(my_list)
-New_List=list(my_set)
-
-print("Уникальным значениями в списке {0} являются".format(my_list))
-
-for i in New_List:
-  print(i)
+import random 
+number = int(input("Введите длинну последовательности:  "))
+list_source = [random.randrange(1, 15, 1) for i in range(number)]
+print (list_source)
+list_final = []
+def get_unique(list_source):
+   for x in list_source:
+      if x not in list_source:
+        list_final.append(x)
+   for x in list_final:
+        return
+get_unique(list_source)
+print(list_final)

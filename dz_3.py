@@ -9,12 +9,11 @@ import random
 number = int(input("Введите длинну последовательности:  "))
 list_source = [random.randrange(1, 15, 1) for i in range(number)]
 print (list_source)
+list_final = []
 def get_unique(list_source):
-   list_final = []
-   for x in list_source:
-      if x not in list_final:
-        list_final.append(x)
-   for x in list_final:
-      print(x)
+   for i in list_source:
+    if list_source.count (i) == 1:
+        list_final.append(i)
 get_unique(list_source)
+print(list_final)
 
