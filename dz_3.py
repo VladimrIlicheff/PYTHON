@@ -7,6 +7,8 @@
 
 import random 
 number = int(input("Введите длинну последовательности:  "))
+if number <= 0:
+    print ("Negative value of the number of numbers!")
 list_source = [random.randrange(1, 15, 1) for i in range(number)]
 print (list_source)
 list_final = []
