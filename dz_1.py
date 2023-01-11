@@ -7,6 +7,6 @@
 
 from decimal import Decimal
 number = Decimal(input("Введите любое число: "  ))
-number_format = input("Введите требуемую точность:  ")
+number_format = input("Введите требуемую точность в формате 0.0001:  ")
 number = number.quantize(Decimal(number_format))
 print(number)
