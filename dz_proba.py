@@ -37,26 +37,26 @@
 #         else:
 #             file.write("Нет корней\n")
 # discr(2, 3, 1)
-# # 3. На вход программе подается число n.
-# # Программа печатает численный треугольник.
-# # Используем вложенные циклы.
-# number = int(input())
-# for i in range(1, number+1):
-#     for k in range(i):
-#       print(i, end="")
-# print()
+# 3. На вход программе подается число n.
+# Программа печатает численный треугольник.
+# Используем вложенные циклы.
+number = int(input())
+for i in range(1, number+1):
+    for k in range(i):
+      print(i, end="")
+print()
 
 
-import random 
-number = int(input("Введите длинну последовательности:  "))
-list_source = [random.randrange(1, 15, 1) for i in range(number)]
-print (list_source)
-list_final = []
-def get_unique(list_source):
-   for x in list_source:
-      if x not in list_source:
-        list_final.append(x)
-   for x in list_final:
-        return
-get_unique(list_source)
-print(list_final)
+# import random 
+# number = int(input("Введите длинну последовательности:  "))
+# list_source = [random.randrange(1, 15, 1) for i in range(number)]
+# print (list_source)
+# list_final = []
+# def get_unique(list_source):
+#    for x in list_source:
+#       if x not in list_source:
+#         list_final.append(x)
+#    for x in list_final:
+#         return
+# get_unique(list_source)
+# print(list_final)
