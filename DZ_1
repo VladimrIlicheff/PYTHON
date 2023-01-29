@@ -6,4 +6,14 @@
 # авб абв бав абв вба бав вба абв абв абв
 # авб бав вба бав вба
 
-
+import random
+word = "абв"
+number_word = (int(input("Введите количество слов ")))
+list_word = []
+for a in range(number_word):
+    random_word = random.sample(word, 3)
+    list_word.append("".join(random_word))
+print(" ".join(list_word))
+print("_ _ _ _ _ _ _ _ _ _ _")
+list_final = list(filter(lambda a: word not in a, list_word))
+print(" ".join(list_final))
